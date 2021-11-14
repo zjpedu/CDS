@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.8)
+project(lockfree)
+set(CMAKE_CXX_STANDARD 11)
+include_directories(lockfree/queue lockfree/stack/hazp lockfree/qsrb)
+file(GLOB_RECURSE SOURCE_FILES "*.hpp" "*.cpp")
+add_executable(lockfrees stack/hazp/main.cpp)
+add_executable(lockfreeq queue/main.cpp)
+add_executable(lockfreqs stack/qsrb/main.cpp)
