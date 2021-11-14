@@ -1,4 +1,4 @@
-## ConcurrentDataStructure
+## Concurrent Data Structure
 
 ### **Methods**
 * lockfree queue
